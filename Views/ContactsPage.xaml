@@ -16,6 +16,10 @@
               SeparatorColor="SteelBlue"
               SeparatorVisibility="None"
               >
-        
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Path=Name}"></TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
     </ListView>
 </ContentPage>
