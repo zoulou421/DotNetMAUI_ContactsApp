@@ -1,7 +1,16 @@
+using Contacts.MAUI.Models;
+
+//Add this is encountered ambigious problem:
+//using MesContacts = Contacts.MAUI.Models.MesContacts;
+
 namespace Contacts.MAUI.Views;
 
+
+[QueryProperty(nameof(ContactId), "Id")]
 public partial class EditContactPage : ContentPage
 {
+    private MesContacts contact;
+
 	public EditContactPage()
 	{
 		InitializeComponent();
@@ -11,5 +20,14 @@ public partial class EditContactPage : ContentPage
     {
         //Shell.Current.GoToAsync("..");
         Shell.Current.GoToAsync($"//{nameof(ContactsPage)}");
+    }
+    public string ContactId
+    {
+        set
+        {
+           contact = MesContactsRepository.GetContactById(int.Parse(value));
+            //lblName.Text = contact.Name;
+            lblName.Text = contact.Name;
+        }
     }
 }

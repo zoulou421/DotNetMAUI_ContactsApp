@@ -43,12 +43,14 @@ public partial class ContactsPage : ContentPage
         public string Email { get; set; }
     }*/
 
-    private void listContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    private async void listContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
         if(listContacts.SelectedItem!=null)
         {
             // DisplayAlert("test", "message", "ok");
-            Shell.Current.GoToAsync(nameof(EditContactPage));
+            // await Shell.Current.GoToAsync(nameof(EditContactPage));
+            await Shell.Current.GoToAsync(
+             $"{nameof(EditContactPage)}?Id={((MesContacts)listContacts.SelectedItem).ContactId}");
         }
        
        
