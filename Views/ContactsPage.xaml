@@ -12,13 +12,18 @@
         <Button x:Name="btnAddContact" Text="Add Contact" Clicked="btnAddContact_Clicked"></Button>
     </VerticalStackLayout-->
     <ListView x:Name="listContacts" 
-              BackgroundColor="Transparent"
-              SeparatorColor="SteelBlue"
+              BackgroundColor="SteelBlue"
+              SeparatorColor="Silver"
               SeparatorVisibility="None"
+              RowHeight="50"
+              ItemSelected="listContacts_ItemSelected"
+              ItemTapped="listContacts_ItemTapped"
               >
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Path=Name}"></TextCell>
+                <TextCell Text="{Binding Path=Name}"
+                          Detail="{Binding Email}">
+                </TextCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

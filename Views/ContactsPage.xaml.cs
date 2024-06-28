@@ -42,7 +42,20 @@ public partial class ContactsPage : ContentPage
         public string Name { get; set; }
         public string Email { get; set; }
     }
-    
 
+    private void listContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        if(listContacts.SelectedItem!=null)
+        {
+            // DisplayAlert("test", "message", "ok");
+            Shell.Current.GoToAsync(nameof(EditContactPage));
+        }
+       
+       
+    }
 
+    private void listContacts_ItemTapped(object sender, ItemTappedEventArgs e)
+    {
+        listContacts.SelectedItem = null;
+    }
 }
