@@ -1,3 +1,8 @@
+using Contacts.MAUI.Models;
+
+// in case you encounter DUPLICATE,[like MesContacts already exists] just precise this:
+using MesContacts = Contacts.MAUI.Models.MesContacts;
+
 namespace Contacts.MAUI.Views;
 
 public partial class ContactsPage : ContentPage
@@ -14,18 +19,13 @@ public partial class ContactsPage : ContentPage
         "Jeremy Moses BEBY"
          };
           listContacts.ItemsSource = contacts;*/
-        List<Contact> contacts = new List<Contact>()
-        {
-            new Contact {Name="Bonevy BEBY",Email="bonevybeby@gmail.com"},
-            new Contact {Name="Ketsia BEBY",Email="kb@gmail.com"},
-            new Contact {Name="Gemima BEBY",Email="gb@gmail.com"},
-            new Contact {Name="Jacob Elan BEBY",Email="jelanb@gmail.com"},
-            new Contact {Name="Jeremy Moses BEBY",Email="jmb@gmail.com"}
-        };
+        // List <Contact> contacts=ContactRepository.GetContacts();
+        List<MesContacts> contacts = MesContactsRepository.GetContacts();
+       
         listContacts.ItemsSource = contacts;
     }
-   
-    
+
+
 
     /*  private void btnEditContact_Clicked(object sender, EventArgs e)
       {
@@ -37,11 +37,11 @@ public partial class ContactsPage : ContentPage
           Shell.Current.GoToAsync(nameof(AddContactPage));
       }*/
 
-    public class Contact
+    /*public class Contact
     {
         public string Name { get; set; }
         public string Email { get; set; }
-    }
+    }*/
 
     private void listContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
