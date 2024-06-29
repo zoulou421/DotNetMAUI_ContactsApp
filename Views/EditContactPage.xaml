@@ -16,31 +16,33 @@
         <Frame Padding="10,2,10,2">
             <HorizontalStackLayout>
                 <Label Text="Name" VerticalOptions="Center" WidthRequest="60"></Label>
-                <Entry VerticalOptions="Center"></Entry>
+                <Entry VerticalOptions="Center" x:Name="entryName"></Entry>
             </HorizontalStackLayout>
         </Frame>
 
         <Frame Padding="10,2,10,2">
         <HorizontalStackLayout>
             <Label Text="Email" VerticalOptions="Center" WidthRequest="60"></Label>
-            <Entry VerticalOptions="Center"></Entry>
+                <Entry VerticalOptions="Center" x:Name="entryEmail"></Entry>
         </HorizontalStackLayout>
         </Frame>
 
         <Frame Padding="10,2,10,2">
                 <HorizontalStackLayout>
             <Label Text="Phone" VerticalOptions="Center" WidthRequest="60"></Label>
-            <Entry VerticalOptions="Center"></Entry>
+                <Entry VerticalOptions="Center" x:Name="entryPhone"></Entry>
         </HorizontalStackLayout>
         </Frame>
 
         <Frame Padding="10,2,10,2">
         <HorizontalStackLayout>
-            <Label Text="Adress" VerticalOptions="Center" WidthRequest="60"></Label>
-            <Entry VerticalOptions="Center"></Entry>
+            <Label Text="Address" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" x:Name="entryAddress"></Entry>
         </HorizontalStackLayout>
         </Frame>
 
+        <Button x:Name="btnUpdate" Text="Update" Clicked="btnUpdate_Clicked"></Button>
+        <Button x:Name="btnCancel" Text="Cancel" Clicked="btnCancel_Clicked"></Button>
     </VerticalStackLayout>
 
     <!--HorizontalStackLayout Spacing="10">

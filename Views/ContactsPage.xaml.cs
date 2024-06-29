@@ -1,7 +1,8 @@
 using Contacts.MAUI.Models;
+using System.Collections.ObjectModel;
 
 // in case you encounter DUPLICATE,[like MesContacts already exists] just precise this:
-using MesContacts = Contacts.MAUI.Models.MesContacts;
+//using MesContacts = Contacts.MAUI.Models.MesContacts;
 
 namespace Contacts.MAUI.Views;
 
@@ -20,8 +21,17 @@ public partial class ContactsPage : ContentPage
          };
           listContacts.ItemsSource = contacts;*/
         // List <Contact> contacts=ContactRepository.GetContacts();
-        List<MesContacts> contacts = MesContactsRepository.GetContacts();
-       
+       // List<MesContacts> contacts = MesContactsRepository.GetContacts();
+
+       // listContacts.ItemsSource = contacts;
+
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        //List<MesContacts> contacts = MesContactsRepository.GetContacts(); improved as follows:
+        var contacts =new ObservableCollection<MesContacts>( MesContactsRepository.GetContacts());
         listContacts.ItemsSource = contacts;
     }
 
@@ -50,7 +60,8 @@ public partial class ContactsPage : ContentPage
             // DisplayAlert("test", "message", "ok");
             // await Shell.Current.GoToAsync(nameof(EditContactPage));
             await Shell.Current.GoToAsync(
-             $"{nameof(EditContactPage)}?Id={((MesContacts)listContacts.SelectedItem).ContactId}");
+            $"{nameof(EditContactPage)}?Id={((MesContacts)listContacts.SelectedItem).ContactId}");
+
         }
        
        

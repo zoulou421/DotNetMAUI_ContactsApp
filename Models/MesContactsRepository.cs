@@ -20,7 +20,38 @@ namespace Contacts.MAUI.Models
         public static List<MesContacts> GetContacts() => _contacts;
 
         public static MesContacts GetContactById(int contactId){
-            return _contacts.FirstOrDefault(x => x.ContactId == contactId);
+           // return _contacts.FirstOrDefault(x => x.ContactId == contactId);
+           var contact= _contacts.FirstOrDefault(x => x.ContactId == contactId);
+            if (contact != null)
+            {
+                return new MesContacts
+                {
+                    ContactId=contactId,
+                    Email = contact.Email,
+                    Name=contact.Name,
+                    Address=contact.Address,
+                    Phone=contact.Phone,
+
+                };
+            }
+            return null;
+        }
+
+        public static void UpdateContact(int contactId, MesContacts contact)
+        {
+            if (contactId != contact.ContactId) return;
+
+            var contactToUpdate = _contacts.FirstOrDefault(x => x.ContactId == contactId);
+            if (contactToUpdate != null)
+            {
+                //use AutoMapper IF you WANT.But not in this demo...
+
+                contactToUpdate.Email = contact.Email;
+                contactToUpdate.Name = contact.Name;
+                contactToUpdate.Address = contact.Address;
+                contactToUpdate.Phone = contact.Phone;
+                
+            }
         }
         
     }

@@ -27,7 +27,31 @@ public partial class EditContactPage : ContentPage
         {
            contact = MesContactsRepository.GetContactById(int.Parse(value));
             //lblName.Text = contact.Name;
-          //  lblName.Text = contact.Name;
+            //  lblName.Text = contact.Name;
+            if (contact != null)
+            {
+                entryName.Text = contact.Name;
+                entryEmail.Text = contact.Email;
+                entryPhone.Text = contact.Phone;
+                entryAddress.Text = contact.Address;
+               
+            }
         }
+    }
+
+    private void btnUpdate_Clicked(object sender, EventArgs e)
+    {
+        contact.Name = entryName.Text;
+        contact.Email = entryEmail.Text;
+        contact.Phone = entryPhone.Text;
+        contact.Address = entryAddress.Text;
+
+        MesContactsRepository.UpdateContact(contact.ContactId, contact);
+        Shell.Current.GoToAsync("..");
+    }
+
+    private void btnCancel_Clicked(object sender, EventArgs e)
+    {
+
     }
 }

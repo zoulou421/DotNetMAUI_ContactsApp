@@ -11,7 +11,7 @@
         <Button x:Name="btnEditContact" Text="Edit Contact" Clicked="btnEditContact_Clicked"></Button>
         <Button x:Name="btnAddContact" Text="Add Contact" Clicked="btnAddContact_Clicked"></Button>
     </VerticalStackLayout-->
-    <ListView x:Name="listContacts" 
+    <ListView x:Name="listContacts"
               BackgroundColor="SteelBlue"
               SeparatorColor="Silver"
               SeparatorVisibility="None"
