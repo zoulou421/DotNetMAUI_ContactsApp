@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Contacts.MAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+7c1a02bc78716cab9e468433bd328f51dd77c148")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+1a161d9f861b83bc8fe780d6198dbad8a3ed21ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Contacts.MAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Contacts.MAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
