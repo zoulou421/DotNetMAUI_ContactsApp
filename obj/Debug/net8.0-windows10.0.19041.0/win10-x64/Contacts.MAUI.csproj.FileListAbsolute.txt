@@ -177,3 +177,6 @@ C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\obj\Debug\net8.0-windows10.0.1
 C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Contacts.MAUI.sourcelink.json
+C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
+C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
+C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Speech.dll

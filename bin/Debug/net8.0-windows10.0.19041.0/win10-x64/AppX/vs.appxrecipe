@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-29T11:16:43.900</Modified>
+      <Modified>2024-06-29T13:19:03.833</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-28T17:04:34.290</Modified>
+      <Modified>2024-06-29T12:38:55.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Contacts.MAUI.runtimeconfig.json">
       <PackagePath>Contacts.MAUI.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-27T17:51:36.042</Modified>
+      <Modified>2024-06-29T12:38:55.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Contacts.MAUI.dll">
       <PackagePath>Contacts.MAUI.dll</PackagePath>
-      <Modified>2024-06-29T11:16:42.875</Modified>
+      <Modified>2024-06-29T13:19:03.504</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Contacts.MAUI.exe</PackagePath>
-      <Modified>2024-06-29T11:16:42.924</Modified>
+      <Modified>2024-06-29T13:19:03.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Contacts.MAUI.deps.json">
       <PackagePath>Contacts.MAUI.deps.json</PackagePath>
-      <Modified>2024-06-28T17:04:34.012</Modified>
+      <Modified>2024-06-29T12:38:55.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -297,6 +297,14 @@
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-10-16T19:41:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\communitytoolkit.maui\9.0.1\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+      <Modified>2024-06-07T09:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\communitytoolkit.maui.core\9.0.1\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+      <Modified>2024-06-07T09:45:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -425,6 +433,10 @@
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.windowsappsdk\1.5.240311000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-03-11T10:57:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
+      <PackagePath>System.Speech.dll</PackagePath>
+      <Modified>2023-10-31T15:00:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
