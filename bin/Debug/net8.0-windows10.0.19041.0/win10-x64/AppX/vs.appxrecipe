@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-30T11:41:01.859</Modified>
+      <Modified>2024-06-30T13:50:37.641</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Contacts.MAUI.dll">
       <PackagePath>Contacts.MAUI.dll</PackagePath>
-      <Modified>2024-06-30T11:41:00.778</Modified>
+      <Modified>2024-06-30T13:50:37.293</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Contacts.MAUI.exe</PackagePath>
-      <Modified>2024-06-30T11:41:00.825</Modified>
+      <Modified>2024-06-30T13:50:37.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\source\repos\Contacts\Contacts.MAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

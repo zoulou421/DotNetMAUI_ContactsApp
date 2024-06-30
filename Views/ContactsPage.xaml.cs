@@ -31,6 +31,7 @@ public partial class ContactsPage : ContentPage
     {
         base.OnAppearing();
         //List<MesContacts> contacts = MesContactsRepository.GetContacts(); improved as follows:
+        MySearchBar.Text = string.Empty;
         LoadContacts();
     }
 
@@ -89,4 +90,16 @@ public partial class ContactsPage : ContentPage
         var contacts = new ObservableCollection<MesContacts>(MesContactsRepository.GetContacts());
         listContacts.ItemsSource = contacts;
     }
+
+    private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+    {
+       var contacts= new ObservableCollection<MesContacts>(MesContactsRepository.SearchContacts(((SearchBar)sender).Text));
+       listContacts.ItemsSource = contacts;
+
+    }
+
+   /* private void SearchBar_SearchButtonPressed(object sender, EventArgs e)
+    {
+
+    }*/
 }
