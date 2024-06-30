@@ -45,8 +45,18 @@
               >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Path=Name}"
+                    <TextCell
+                          Text="{Binding Path=Name}"
                           Detail="{Binding Email}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Delete" 
+                                      IsDestructive="True" 
+                                      Clicked="MenuItem_Clicked"
+                                      CommandParameter="{Binding .}"
+                                      >
+                            </MenuItem>
+                            <!--MenuItem Text="Edit" Clicked="btnAdd_Clicked"></MenuItem-->
+                        </TextCell.ContextActions>
                     </TextCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

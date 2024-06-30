@@ -31,8 +31,7 @@ public partial class ContactsPage : ContentPage
     {
         base.OnAppearing();
         //List<MesContacts> contacts = MesContactsRepository.GetContacts(); improved as follows:
-        var contacts =new ObservableCollection<MesContacts>( MesContactsRepository.GetContacts());
-        listContacts.ItemsSource = contacts;
+        LoadContacts();
     }
 
 
@@ -75,5 +74,19 @@ public partial class ContactsPage : ContentPage
     private void btnAdd_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync(nameof(AddContactPage));
+    }
+
+    private void MenuItem_Clicked(object sender, EventArgs e)
+    {
+        var menuItem = sender as MenuItem;
+        var contact = menuItem.CommandParameter as MesContacts;
+        MesContactsRepository.DeleteContact(contact.ContactId);
+        LoadContacts();
+    }
+
+    private void LoadContacts()
+    {
+        var contacts = new ObservableCollection<MesContacts>(MesContactsRepository.GetContacts());
+        listContacts.ItemsSource = contacts;
     }
 }
